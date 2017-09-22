@@ -1,0 +1,9 @@
+Package: catcont
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: "Christopher Brown <chris.brown@decisionpatterns.com> [aut,cre]"
+Description: What the package does (one paragraph).
+Depends: R (>= 3.4.0)
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+LazyData: true

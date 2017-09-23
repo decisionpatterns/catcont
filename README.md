@@ -1,12 +1,11 @@
 # catcont
 
-**Utilities for Working with Variables as Categorical or Continuous**
+**Test For and Identify Categorical or Continuous Values**
 
-This package provides utilities for identifying and testing for whether vectors 
-are categorical or continuos. Functions 'is_cat' and 'is_cont' test whether 
-vectors are categorical and continous respectively. Functions 'which_cat' and 
-'which_cont' identify categorical and continous variables on tables or 
-other recursive objects.
+Methods and utilities for classifying vectors as categorical 
+or continuos. Methods `is_cat` and `is_cont` test for categorical and 
+continous values respectively. Functions `which_cat`, `which_cont` and 
+`cat_cont` identify them within recursive objects.
 
 
 ## Installation

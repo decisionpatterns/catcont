@@ -38,3 +38,14 @@ test_that('which_cont', {
   which_cont( iris )             %>% expect_equivalent( 1:4 )
   which_cont( iris, names=TRUE ) %>% expect_equal( names(iris)[1:4] )
 })
+
+context('cat_cont')
+test_that('cat_cont', {
+  
+  data(iris)
+  res <- structure(c("cont", "cont", "cont", "cont", "cat"), .Names = c("Sepal.Length", 
+    "Sepal.Width", "Petal.Length", "Petal.Width", "Species"))
+  
+  cat_cont(iris) %>% expect_identical(res)
+  
+})

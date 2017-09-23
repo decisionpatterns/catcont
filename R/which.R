@@ -8,11 +8,11 @@
 #' instead.
 #'
 #' @examples
-#'   which.cat(iris)
-#'   which.cat( iris, names=TRUE )
+#'   which_cat(iris)
+#'   which_cat( iris, names=TRUE )
 #'
-#'   which.cont(iris)
-#'   which.cont( iris, names=TRUE )
+#'   which_cont(iris)
+#'   which_cont( iris, names=TRUE )
 #'
 #' @aliases which_cat which_cont
 #' @md

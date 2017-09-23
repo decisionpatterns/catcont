@@ -43,9 +43,9 @@ You can install catcont from github with:
      
 ### Identification 
 
-    which.cat(iris)
-    which.cat( iris, names=TRUE )
+    which_cat(iris)
+    which_cat( iris, names=TRUE )
       
-    which.cont(iris)
-    which.cont( iris, names=TRUE )
+    which_cont(iris)
+    which_cont( iris, names=TRUE )
  

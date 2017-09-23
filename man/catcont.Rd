@@ -114,11 +114,11 @@ may be the case.
   is_cont( Sys.Date() )    # TRUE
   is_cont( complex(1,2) )  # TRUE
 
-  which.cat(iris)
-  which.cat( iris, names=TRUE )
+  which_cat(iris)
+  which_cat( iris, names=TRUE )
 
-  which.cont(iris)
-  which.cont( iris, names=TRUE )
+  which_cont(iris)
+  which_cont( iris, names=TRUE )
 
 }
 \seealso{

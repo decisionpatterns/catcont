@@ -1,14 +1,14 @@
 Package: catcont
 Title: Test for and Identify Categorical or Continuous Values
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(
     person("Christopher", "Brown", , "chris.brown@decisionpatterns.com", c("aut", "cre") ),
     person("Decision Patterns", role = "cph")
     )
 Description: Methods and utilities for classifying vectors as categorical 
-    or continuos. Methods 'is_cat' and 'is_cont' test for categorical and 
-    continous values respectively. Functions'which_cat', 'which_cont' and 
-    'cat_cont' identify them within recursive objects.
+    or continuous. Methods is_cat() and is_cont() test for categorical and 
+    continuous values respectively. Functions which_cat(), which_cont() and 
+    cat_cont() identify them within recursive objects.
 URL: 
     https://github.com/decisionpatterns/catcont 
     http://www.decisionpatterns.com

@@ -54,7 +54,9 @@ their index?}
 }
 \value{
 \code{cat_cont} returns a named character with values either "\code{cat}" or "\code{cont}".
-Names are the column names of \code{x}.
+If \code{x} is a atomic vector, a single string is given. If \code{x} is recursive,
+a "\code{cat}"/"\code{cont}" value is given for each element. Names correspond to the
+names of the element.
 
 \code{is_cat} and \code{is_cont} return \code{logical}.
 

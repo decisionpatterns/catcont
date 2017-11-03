@@ -12,6 +12,9 @@ test_that( 'select_.data.frame', {
   iris %>% select_cont() %>% ncol %>% expect_equal(4)
   iris %>% select_cont() %>% names() %>% expect_equal( names(iris)[1:4] )
 
+  iris %>% select_cont %>% select_cat %>% ncol %>% expect_null()
+  iris %>% select_cat %>% select_cont %>% ncol %>% expect_null()
+
 })
 
 
@@ -25,5 +28,9 @@ test_that( 'select_.data.table', {
 
   iris %>% select_cont() %>% ncol %>% expect_equal(4)
   iris %>% select_cont() %>% names() %>% expect_equal( names(iris)[1:4] )
+
+  iris %>% select_cont %>% select_cat %>% ncol %>% expect_null
+  iris %>% select_cat %>% select_cont %>% ncol %>% expect_null
+
 
 })

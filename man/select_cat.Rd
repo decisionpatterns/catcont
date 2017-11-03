@@ -25,7 +25,8 @@ select_cont(data)
 \item{data}{}
 }
 \value{
-Always returns a table object
+Returns a table-like object of the same class as data unless there are no
+columns in which case `NULL` is returned
 }
 \description{
 Select columns by role

@@ -5,10 +5,10 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/catcont)](https://cran.r-project.org/package=catcont)
 [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) 
 
-Methods and utilities for classifying vectors as categorical 
-or continuos. Methods is_cat() and is_cont() test for categorical and 
-continous values respectively. Functions which_cat(), which_cont() and 
-cat_cont() identify them within recursive objects.
+Methods and utilities for testing, identifying, selecting and  
+mutating objects as categorical or continous types. These functions are work on both 
+atomic vectors as well as recursive (table and list-like) objects. 
+
 
 
 ## Installation

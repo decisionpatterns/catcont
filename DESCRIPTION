@@ -1,23 +1,26 @@
 Package: catcont
-Title: Test for and Identify Categorical or Continuous Values
-Version: 0.4.1
-Date: 2017-11-03
+Title: Test, Identify, Select and Mutate Categorical or Continuous Values
+Version: 0.5.0
+Date: 2018-01-22
 Authors@R: c(
     person("Christopher", "Brown", , "chris.brown@decisionpatterns.com", c("aut", "cre") ),
     person("Decision Patterns", role = "cph")
     )
-Description: Methods and utilities for classifying vectors as categorical 
-    or continuous. 
+Description: Methods and utilities for testing, identifying, selecting and  
+    mutating objects as categorical or continous types. These functions work on both 
+    atomic vectors as well as recursive (table and list-like) objects. 
 URL: 
     https://github.com/decisionpatterns/catcont 
     http://www.decisionpatterns.com
 BugReports: 
     https://github.com/decisionpatterns/catcont/issues
-Depends: R (>= 3.4.0)
+Depends: R (>= 3.3.0)
 Suggests:
     testthat,
     data.table (>= 1.10.4),
     magrittr
+Imports:
+    dplyr (>= 0.7.0)
 License: GPL-2 | file LICENSE
 Encoding: UTF-8
 LazyData: true

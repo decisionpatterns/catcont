@@ -1,12 +1,14 @@
 #' select_cat, select_cont
 #'
-#' Select columns by role
+#' Select columns by type
 #'
 #' @param data
 #'
 #' @details
 #'
-#' select_cat() and select_cont() return only the
+#' select_cat() and select_cont() return only the categorical and continuous
+#' types respectively. This is closely mirrors the dplyr function select but
+#' works with non-table values as well.
 #'
 #' @return
 #' Returns a table-like object of the same class as data unless there are no

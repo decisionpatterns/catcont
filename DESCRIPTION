@@ -1,14 +1,18 @@
 Package: catcont
-Title: Test, Identify, Select and Mutate Categorical or Continuous Values
+Title: Higher Level Methods for Working with Vectors as Categorical/Nominal or 
+    Continous Types in a Robustand Consistent Way.
 Version: 0.5.0
 Date: 2018-01-22
 Authors@R: c(
     person("Christopher", "Brown", , "chris.brown@decisionpatterns.com", c("aut", "cre") ),
     person("Decision Patterns", role = "cph")
     )
-Description: Methods and utilities for testing, identifying, selecting and  
-    mutating objects as categorical or continous types. These functions work on both 
-    atomic vectors as well as recursive (table and list-like) objects. 
+Description: This collection of methods and utilities allows for a working with
+    vectors at a higher level abstraction, i.e. by whether they are 
+    categorical (nominal)  or continous. The functions allow for testing, 
+    identifying, selecting, mutating,etc. and work with  both 
+    atomic vectors and recursive objects (table and list-like) objects in a 
+    tidyverse compliant way.
 URL: 
     https://github.com/decisionpatterns/catcont 
     http://www.decisionpatterns.com

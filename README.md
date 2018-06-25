@@ -50,11 +50,32 @@ You can install catcont from github with:
     is_cont( Sys.Date() )    # TRUE
     is_cont( complex(1,2) )  # TRUE
      
+    
+     
 ### Identification 
 
+    # Atomic 
+    cat_cont(1:10)
+    cat_cont(letters)
+     
+    # Recursive 
+    cat_cont(iris)
+     
     which_cat(iris)
     which_cat( iris, names=TRUE )
       
     which_cont(iris)
     which_cont( iris, names=TRUE )
+
+   
  
+### Selection 
+
+    iris %>% select_cat()
+    iris %>% select_cont()
+    
+    
+### Mutation 
+
+    iris %>% mutate_if_cat(...)
+    iris %>% mutate_if_cont(...)

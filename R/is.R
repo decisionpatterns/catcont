@@ -1,7 +1,7 @@
 #' @title
 #' categorical or continuous variables
 #'
-#' @description 
+#' @description
 #' These functions facilitate working with variables as categorical or continous
 #' rather than logical, integer, numeric, factor, character, ..
 #'
@@ -13,29 +13,29 @@
 #' @details
 #'
 #' These functions are used to test and identify which/if a variable or
-#' variables are categorical or continuos.  \code{is_cat} and \code{is_cont}
+#' variables are categorical or continuos.  `is_cat` and `is_cont`
 #' take single variable arguments.
 #'
 #' Mostly, the categorical and continuos assessment is straight-
-#' forward. Continuous variables are respresented `integer`, `double`
-#' or `complex` types. All other types are categorical. There are a few 
+#' forward. Continuous variables are respresented by `integer`, `double`
+#' or `complex` types. All other types are categorical. There are a few
 #' opinionated exceptions:
 #'   - **factors** are categorical (though typed 'integer')
 #'   - **ordered** factors are (though typed 'integer')
-#'   - **logical** are categorical 
+#'   - **logical** are categorical
 #'
-#' For simplicity, it is assumed that a vector cannot be simultaneous 
+#' For simplicity, it is assumed that a vector cannot be simultaneous
 #' categorical and continous, though in some cases (e.g. ordered factors) this
-#' may be the case. 
-#' 
+#' may be the case.
+#'
 #' @seealso
 #'  - [base::typeof()]
 #'  - [base::is.numeric()] [methods::is()]
 #'  - [base::which()]
-#'  
-#' @return 
+#'
+#' @return
 #' `is_cat` and `is_cont` return `logical`.
-#' 
+#'
 #' @examples
 #'
 #'   is_cat(letters)          # TRUE
@@ -59,13 +59,12 @@
 #' @md
 #' @aliases is_cat is_cont
 #' @rdname catcont
-#' @export 
+#' @export
 
 is_cat <- function(x) UseMethod('is_cat')
 
 
 cont_types <- c( 'integer', 'double', 'complex' )
-
 
 #' @rdname catcont
 #' @export
@@ -87,7 +86,6 @@ is_cat.factor <- function(x) TRUE
 #' @rdname catcont
 #' @export
 is_cat.logical <- function(x) TRUE
-
 
 
 

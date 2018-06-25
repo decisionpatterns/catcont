@@ -8,13 +8,11 @@
 \alias{is_cat.ordered}
 \alias{is_cat.factor}
 \alias{is_cat.logical}
-\alias{is_cont}
 \alias{is_cont.default}
 \alias{is_cont.logical}
 \alias{is_cont.factor}
 \alias{is_cont.ordered}
 \alias{which_cat}
-\alias{which_cont}
 \alias{which_cont}
 \title{categorical or continuous variables}
 \usage{
@@ -68,10 +66,6 @@ instead.
 \description{
 These functions facilitate working with variables as categorical or continous
 rather than logical, integer, numeric, factor, character, ..
-
-#' @rdname catcont
-#' @export
-is_cont.POSIXct <- function(x) TRUE
 }
 \details{
 These functions are used to test and identify which/if a variable or
@@ -79,7 +73,7 @@ variables are categorical or continuos.  \code{is_cat} and \code{is_cont}
 take single variable arguments.
 
 Mostly, the categorical and continuos assessment is straight-
-forward. Continuous variables are respresented \code{integer}, \code{double}
+forward. Continuous variables are respresented by \code{integer}, \code{double}
 or \code{complex} types. All other types are categorical. There are a few
 opinionated exceptions:
 \itemize{

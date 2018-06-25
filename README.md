@@ -2,8 +2,8 @@
 
 **Test For and Identify Categorical or Continuous Values**
 
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/catcont)](https://cran.r-project.org/package=catcont)
-[![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) 
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/catcont)](https://cran.r-project.org/package=catcont)
+[![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) 
 
 This collection of methods and utilities allows for a working with
 vectors at a higher level abstraction, i.e. by whether they are 

@@ -13,11 +13,11 @@
 #' @details
 #'
 #' These functions are used to test and identify which/if a variable or
-#' variables are categorical or continuos.  \code{is_cat} and \code{is_cont}
+#' variables are categorical or continuos.  `is_cat` and `is_cont`
 #' take single variable arguments.
 #'
 #' Mostly, the categorical and continuos assessment is straight-
-#' forward. Continuous variables are respresented `integer`, `double`
+#' forward. Continuous variables are respresented by `integer`, `double`
 #' or `complex` types. All other types are categorical. There are a few
 #' opinionated exceptions:
 #'   - **factors** are categorical (though typed 'integer')

@@ -1,6 +1,5 @@
 
-library(magrittr)
-
+source("utils.R")
 
 context( "is_cat")
 test_that( "is_cat", {
@@ -11,7 +10,7 @@ test_that( "is_cat", {
   is_cat(1:10)             %>% expect_false
   is_cat(rnorm(10))        %>% expect_false
   is_cat( Sys.Date() )    %>% expect_false
-  is_cat( complex(1,2) )  %>% expect_false  
+  is_cat( complex(1,2) )  %>% expect_false
   # is_cat( now() )          %>% expect_false
 })
 
@@ -24,7 +23,7 @@ test_that( "is_contt", {
   is_cont(1:10)            %>% expect_true
   is_cont(rnorm(10))       %>% expect_true
   is_cont( Sys.Date() )    %>% expect_true
-  is_cont( complex(1,2) )  %>% expect_true 
+  is_cont( complex(1,2) )  %>% expect_true
 })
 
 context('which_cat')
@@ -41,11 +40,11 @@ test_that('which_cont', {
 
 context('cat_cont')
 test_that('cat_cont', {
-  
+
   data(iris)
-  res <- structure(c("cont", "cont", "cont", "cont", "cat"), .Names = c("Sepal.Length", 
+  res <- structure(c("cont", "cont", "cont", "cont", "cat"), .Names = c("Sepal.Length",
     "Sepal.Width", "Petal.Length", "Petal.Width", "Species"))
-  
+
   cat_cont(iris) %>% expect_identical(res)
-  
+
 })

@@ -9,20 +9,20 @@
 \alias{select_cont.data.table}
 \title{select_cat, select_cont}
 \usage{
-select_cat(data)
+select_cat(.data)
 
-\method{select_cat}{default}(data)
+\method{select_cat}{default}(.data)
 
-\method{select_cat}{data.table}(data)
+\method{select_cat}{data.table}(.data)
 
-select_cont(data)
+select_cont(.data)
 
-\method{select_cont}{default}(data)
+\method{select_cont}{default}(.data)
 
-\method{select_cont}{data.table}(data)
+\method{select_cont}{data.table}(.data)
 }
 \arguments{
-\item{data}{}
+\item{.data}{table}
 }
 \value{
 Returns a table-like object of the same class as data unless there are no

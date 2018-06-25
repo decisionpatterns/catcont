@@ -1,6 +1,14 @@
+# 2018-05-17 catcont 0.6.0
+
+ - Remove - `Suggest: margittr` now uses minimal piper with tests
+ - In `select_()` change parameter from `data` -> `.data` to align with `dplyr::select`
+ - Update documentation
+ - Update `onAttach`
+ - Add `test-mutate_if.r`
+ 
 # 2018-01-22 catcont 0.5.0 
  
- - Add `mutate_if_` functions.
+ - Add `mutate_if_*` functions.
 
 # 2017-11-03 catcont 0.4.1
   

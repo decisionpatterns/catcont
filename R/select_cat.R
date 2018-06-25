@@ -2,7 +2,7 @@
 #'
 #' Select columns by type
 #'
-#' @param data
+#' @param .data table
 #'
 #' @details
 #'
@@ -28,14 +28,14 @@
 #' @export
 
 
-select_cat <- function(data) UseMethod('select_cat')
+select_cat <- function(.data) UseMethod('select_cat')
 
 
   #' @rdname select_cat
   #' @export
 
-  select_cat.default <- function(data) {
-    ret <- data[ , which_cat(data), drop=FALSE ]
+  select_cat.default <- function(.data) {
+    ret <- .data[ , which_cat(.data), drop=FALSE ]
     if( ncol(ret)== 0 ) ret <- NULL
     ret
   }
@@ -43,8 +43,8 @@ select_cat <- function(data) UseMethod('select_cat')
   #' @rdname select_cat
   #' @export
 
-  select_cat.data.table <- function(data) {
-    ret <- data[ , which_cat(data), with=FALSE, drop=FALSE ]
+  select_cat.data.table <- function(.data) {
+    ret <- .data[ , which_cat(.data), with=FALSE, drop=FALSE ]
     if( ncol(ret)== 0 ) ret <- NULL
     ret
   }
@@ -54,13 +54,13 @@ select_cat <- function(data) UseMethod('select_cat')
 #' @rdname select_cat
 #' @export
 
-select_cont <- function(data) UseMethod('select_cont')
+select_cont <- function(.data) UseMethod('select_cont')
 
   #' @rdname select_cat
   #' @export
 
-  select_cont.default <- function(data) {
-    ret <- data[ , which_cont(data), drop=FALSE ]
+  select_cont.default <- function(.data) {
+    ret <- .data[ , which_cont(.data), drop=FALSE ]
     if( ncol(ret)== 0 ) ret <- NULL
     ret
   }
@@ -68,8 +68,8 @@ select_cont <- function(data) UseMethod('select_cont')
   #' @rdname select_cat
   #' @export
 
-  select_cont.data.table <- function(data) {
-    ret <- data[ , which_cont(data), with=FALSE, drop=FALSE ]
+  select_cont.data.table <- function(.data) {
+    ret <- .data[ , which_cont(.data), with=FALSE, drop=FALSE ]
     if( ncol(ret)== 0 ) ret <- NULL
     ret
   }

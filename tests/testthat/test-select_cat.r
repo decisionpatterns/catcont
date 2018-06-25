@@ -1,5 +1,5 @@
 
-library(magrittr)
+source("utils.R")
 
 context('select_cat and select_cont')
 
